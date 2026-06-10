@@ -1,0 +1,12 @@
+{
+  "name": "orchestration-dashboard",
+  "version": "1.0.0",
+  "description": "Product Orchestration Dashboard",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

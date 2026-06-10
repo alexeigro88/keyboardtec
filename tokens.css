@@ -1,0 +1,138 @@
+/* RapidDev — Design Tokens
+ * Primary brand for a no-code development studio.
+ * Navy + high-contrast red accent on off-white neutrals.
+ */
+
+:root {
+  /* ── Color · Primary ───────────────────────────── */
+  --rd-navy-900: #0B0D2E;     /* deepest surface */
+  --rd-navy-800: #10123B;     /* primary brand navy */
+  --rd-navy-700: #1A1D4F;
+  --rd-navy-600: #2C254A;
+  --rd-navy-500: #343852;
+  --rd-navy-400: #4A4E6E;
+  --rd-navy-200: #ACABBB;
+  --rd-navy-100: #D8D7E2;
+  --rd-navy-050: #ECEBF2;
+
+  --rd-red-700: #C41C2E;
+  --rd-red-600: #DC2237;
+  --rd-red-500: #F4263D;      /* primary accent */
+  --rd-red-400: #E34A4A;
+  --rd-red-100: #FCE2E5;
+
+  /* ── Color · Neutral ───────────────────────────── */
+  --rd-ink-900: #0F0F10;
+  --rd-ink-800: #212425;
+  --rd-ink-700: #353535;
+  --rd-ink-600: #4E4D4D;
+  --rd-ink-500: #505253;
+  --rd-ink-400: #6B6E70;
+  --rd-ink-300: #888B8C;
+  --rd-ink-200: #D0D0D0;
+  --rd-ink-100: #E5E6E6;
+  --rd-ink-075: #EEEEEE;
+  --rd-ink-050: #F5F3F3;      /* page bg */
+  --rd-ink-025: #FAFAFA;
+  --rd-white: #FFFFFF;
+
+  /* ── Semantic ──────────────────────────────────── */
+  --rd-bg: var(--rd-ink-050);
+  --rd-bg-raised: var(--rd-white);
+  --rd-bg-inverse: var(--rd-navy-800);
+  --rd-text: var(--rd-navy-800);
+  --rd-text-muted: var(--rd-ink-500);
+  --rd-text-subtle: var(--rd-ink-400);
+  --rd-text-inverse: var(--rd-white);
+  --rd-border: var(--rd-ink-100);
+  --rd-border-strong: var(--rd-ink-200);
+  --rd-accent: var(--rd-red-500);
+  --rd-accent-hover: var(--rd-red-600);
+
+  /* ── Type ──────────────────────────────────────── */
+  --rd-font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --rd-font-display: "Plus Jakarta Sans", "DM Sans", sans-serif;
+  --rd-font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --rd-fs-12: 12px;
+  --rd-fs-14: 14px;
+  --rd-fs-16: 16px;
+  --rd-fs-18: 18px;
+  --rd-fs-20: 20px;
+  --rd-fs-24: 24px;
+  --rd-fs-28: 28px;
+  --rd-fs-32: 32px;
+  --rd-fs-48: 48px;
+  --rd-fs-60: 60px;
+  --rd-fs-72: 72px;
+  --rd-fs-92: 92px;
+
+  --rd-lh-tight: 1.0;
+  --rd-lh-snug: 1.2;
+  --rd-lh-normal: 1.5;
+
+  --rd-fw-regular: 400;
+  --rd-fw-medium: 500;
+  --rd-fw-semibold: 600;
+  --rd-fw-bold: 700;
+
+  /* ── Spacing (4pt) ─────────────────────────────── */
+  --rd-sp-1: 4px;
+  --rd-sp-2: 8px;
+  --rd-sp-3: 12px;
+  --rd-sp-4: 16px;
+  --rd-sp-5: 20px;
+  --rd-sp-6: 24px;
+  --rd-sp-8: 32px;
+  --rd-sp-10: 40px;
+  --rd-sp-12: 48px;
+  --rd-sp-16: 64px;
+  --rd-sp-20: 80px;
+  --rd-sp-24: 96px;
+
+  /* ── Radii ─────────────────────────────────────── */
+  --rd-r-0: 0;
+  --rd-r-sm: 4px;
+  --rd-r-md: 8px;
+  --rd-r-lg: 12px;
+  --rd-r-xl: 16px;
+  --rd-r-2xl: 24px;
+  --rd-r-full: 9999px;
+
+  /* ── Shadows ───────────────────────────────────── */
+  --rd-shadow-xs: 0 1px 2px rgba(33,49,66,0.04);
+  --rd-shadow-sm: 0 2px 4px rgba(33,49,66,0.04), 0 1px 2px rgba(33,49,66,0.04);
+  --rd-shadow-md: 0 8px 24px rgba(16,18,59,0.06), 0 2px 6px rgba(16,18,59,0.04);
+  --rd-shadow-lg: 0 24px 48px rgba(16,18,59,0.10), 0 8px 16px rgba(16,18,59,0.06);
+  --rd-shadow-focus: 0 0 0 3px rgba(244,38,61,0.25);
+
+  /* ── Motion ────────────────────────────────────── */
+  --rd-ease-standard: cubic-bezier(0.2, 0.0, 0.0, 1);
+  --rd-ease-enter: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --rd-ease-exit: cubic-bezier(0.4, 0.0, 1, 1);
+  --rd-ease-spring: cubic-bezier(0.34, 1.3, 0.64, 1);
+  --rd-dur-instant: 80ms;
+  --rd-dur-fast: 160ms;
+  --rd-dur-base: 240ms;
+  --rd-dur-slow: 360ms;
+  --rd-dur-slower: 560ms;
+
+  /* ── Layout ────────────────────────────────────── */
+  --rd-container: 1200px;
+  --rd-sidebar: 240px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--rd-font-sans);
+  font-size: var(--rd-fs-16);
+  line-height: var(--rd-lh-normal);
+  color: var(--rd-text);
+  background: var(--rd-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { color: inherit; }
+button { font-family: inherit; }
+::selection { background: var(--rd-red-500); color: white; }
